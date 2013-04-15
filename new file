@@ -1,0 +1,1 @@
+shiftLines test.dat | filterNoiceWords noice.txt | sort | createReport outfile.out
