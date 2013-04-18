@@ -5,10 +5,12 @@ noice() {
     for e in "${n[@]}"
         do [[ "$e" = "${v[0]}" ]] && return 0; done
     echo ${v[@]}
+    echo ${v[@]} >> ./.tempout
     shopt -u nocasematch
 }
 
 if [ $# -eq 1 ]; then
+    >> ./.tempout
     temp=$IFS
     IFS=$'\n'
     direct="./$1"
@@ -17,9 +19,9 @@ if [ $# -eq 1 ]; then
         IFS=$temp
         while read line; do noice $line; done
     else
-        echo "error"
+        exit 1
     fi
     IFS=$temp
 else
-    echo "error"
+    exit 2
 fi
