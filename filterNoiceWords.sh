@@ -2,7 +2,7 @@ noice() {
     declare -a v=("$@")
     shopt -s nocasematch
 
-    for e in "${noice[@]}"
+    for e in "${n[@]}"
         do [[ "$e" = "${v[0]}" ]] && return 0; done
     echo ${v[@]}
     shopt -u nocasematch
@@ -10,15 +10,16 @@ noice() {
 
 if [ $# -eq 1 ]; then
     temp=$IFS
-    IFS=$'\n'
+    IFS='\n'
     direct="./$1"
     if [ -a $direct ]; then
-        noice=($(cat $direct))
+        n=($(cat $direct))
         IFS=$temp
         while read line; do noice $line; done
     else
         echo "error"
     fi
+    IFS=$temp
 else
     echo "error"
 fi

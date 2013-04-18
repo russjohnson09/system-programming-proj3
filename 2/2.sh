@@ -20,7 +20,7 @@ mvfiles() {
         if [[ ! -d $file ]]; then 
             read -a array <<< "$file";
             subdir=${array[1]}
-            if [[ ${array[4]} == "" ]]; then
+            if [[ ${#array[@]} -lt 5 ]]; then
                 mv "$file" "$subdir/memo.txt"
             else
                 mv "$file" "$subdir/${array[4]}"

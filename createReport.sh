@@ -1,6 +1,5 @@
 report() {
     declare -a v=("$@")
-
 }
 
 
