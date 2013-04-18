@@ -6,7 +6,7 @@ fun2() {
         for ((j=0;j<$len;j++)); do
             index=$(($j+$i))
             index=$(($index%$len))
-            v[j]=${array[j]}
+            v[j]=${array[index]}
         done
         echo "${v[@]}"
     done
@@ -15,7 +15,7 @@ fun2() {
 if [ $# -eq 1 ]; then
     fname="./$1"
     if [ -a $direct ]; then
-        while read line; do fun2 "$line"; done <$fname
+        while read line; do fun2 "${line%?}"; done <$fname
     else
         echo "error"
     fi

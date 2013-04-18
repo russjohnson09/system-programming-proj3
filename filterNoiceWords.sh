@@ -10,7 +10,7 @@ noice() {
 
 if [ $# -eq 1 ]; then
     temp=$IFS
-    IFS='\n'
+    IFS=$'\n'
     direct="./$1"
     if [ -a $direct ]; then
         n=($(cat $direct))
