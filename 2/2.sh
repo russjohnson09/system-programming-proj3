@@ -33,6 +33,18 @@ mvfiles() {
 
 }
 
+maketest() {
+
+    direct="$PWD/$1/"
+    cd $direct
+    for file in *; do
+        echo $file
+            make -f ../../makefile -C $file
+            make test -f ../../makefile -C $file
+    done
+
+}
+
 
 
 if [ $# -eq 1 ]; then
@@ -40,4 +52,5 @@ if [ $# -eq 1 ]; then
     unzip $1 -d $direct
     subdir $direct
     mvfiles $direct
+    maketest $direct
 fi
