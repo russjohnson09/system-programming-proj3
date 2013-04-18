@@ -1,0 +1,196 @@
+russ@russ-MS-7680 ~/Desktop/system-programming-proj3/2 $ ./2.sh cis361p4.zip 
+Archive:  cis361p4.zip
+  inflating: cis361p4/Project 4_edwardsj_attempt_2013-03-08-10-16-08_cipher.c  
+  inflating: cis361p4/Project 4_edwardsj_attempt_2013-03-08-10-16-08_LetFreq.txt  
+  inflating: cis361p4/Project 4_edwardsj_attempt_2013-03-08-10-16-08_makefile  
+  inflating: cis361p4/Project 4_edwardsj_attempt_2013-03-08-10-16-08.txt  
+  inflating: cis361p4/Project 4_harrisr_attempt_2013-03-02-15-56-34_cipher.c  
+  inflating: cis361p4/Project 4_harrisr_attempt_2013-03-02-15-56-34_LetFreq.txt  
+  inflating: cis361p4/Project 4_harrisr_attempt_2013-03-02-15-56-34_makefile  
+  inflating: cis361p4/Project 4_harrisr_attempt_2013-03-02-15-56-34.txt  
+  inflating: cis361p4/Project 4_smitht_attempt_2013-03-03-16-18-29_cipher.c  
+  inflating: cis361p4/Project 4_smitht_attempt_2013-03-03-16-18-29_LetFreq.txt  
+  inflating: cis361p4/Project 4_smitht_attempt_2013-03-03-16-18-29_makefile  
+  inflating: cis361p4/Project 4_smitht_attempt_2013-03-03-16-18-29.txt  
+edwardsj
+make: Entering directory `/home/russ/Desktop/system-programming-proj3/2/cis361p4/edwardsj'
+cc    -c -o cipher.o cipher.c
+gcc cipher.o -o cipher
+make: Leaving directory `/home/russ/Desktop/system-programming-proj3/2/cis361p4/edwardsj'
+make: Entering directory `/home/russ/Desktop/system-programming-proj3/2/cis361p4/edwardsj'
+./cipher 1 5 ../../data.txt ../../data.out
+File could not be opened
+make: *** [test1] Error 1
+make: Leaving directory `/home/russ/Desktop/system-programming-proj3/2/cis361p4/edwardsj'
+harrisr
+make: Entering directory `/home/russ/Desktop/system-programming-proj3/2/cis361p4/harrisr'
+cc    -c -o cipher.o cipher.c
+gcc cipher.o -o cipher
+make: Leaving directory `/home/russ/Desktop/system-programming-proj3/2/cis361p4/harrisr'
+make: Entering directory `/home/russ/Desktop/system-programming-proj3/2/cis361p4/harrisr'
+./cipher 1 5 ../../data.txt ../../data.out
+File could not be opened
+make: *** [test1] Error 1
+make: Leaving directory `/home/russ/Desktop/system-programming-proj3/2/cis361p4/harrisr'
+smitht
+make: Entering directory `/home/russ/Desktop/system-programming-proj3/2/cis361p4/smitht'
+cc    -c -o cipher.o cipher.c
+gcc cipher.o -o cipher
+make: Leaving directory `/home/russ/Desktop/system-programming-proj3/2/cis361p4/smitht'
+make: Entering directory `/home/russ/Desktop/system-programming-proj3/2/cis361p4/smitht'
+./cipher 1 5 ../../data.txt ../../data.out
+File could not be opened
+make: *** [test1] Error 1
+make: Leaving directory `/home/russ/Desktop/system-programming-proj3/2/cis361p4/smitht'
+
+
+russ@russ-MS-7680 ~/Desktop/system-programming-proj3 $ ./shiftLines.sh test.dat | ./filterNoiceWords.sh noice.txt | sort | ./createReport.sh out.txt
+Advanced Computer Architecture
+Advanced Computer Architecture
+Advanced Database Management Systems
+Advanced Database Management Systems
+Algorithms Introduction to
+Applications of Discrete Mathematics
+Architecture Advanced Computer
+Architecture Advanced Computer
+Architecture and Organization Computer
+Aspect-Oriented Programming
+Communications and Networking Data
+Computer Architecture Advanced
+Computer Architecture Advanced
+Computer Architecture and Organization
+Computer Graphics Mathematical Elements for
+Computer Graphics Procedural Elements of
+Computer Organization
+Computer Organization
+Computer Organization Principles of
+Computer Organization Principles of
+Computer Science Computer Science Tapestry Exploring
+Computer Science Tapestry Exploring Computer Science
+Computing Distributed
+Computing Systems Introduction to
+Concepts Database System
+Database Management Systems Advanced
+Database Management Systems Advanced
+Database System Concepts
+Data Communications and Networking
+Design Fundamentals of Digital Logic Design with VHDL
+Design Introduction to Logic
+Design with VHDL Design Fundamentals of Digital Logic
+Digital Logic Design with VHDL Design Fundamentals of
+Discrete Mathematics Applications of
+Distributed Computing
+Elements for Computer Graphics Mathematical
+Elements of Computer Graphics Procedural
+Engineers An Object Oriented Programming Primer for
+Engineers An Object Oriented Programming Primer for
+Engineers Intro to the Internet for
+Exploring Computer Science Computer Science Tapestry
+Exposed Hacking
+Fundamentals of Digital Logic Design with VHDL Design
+Fundamentals of the Internet and the World Wide Web
+Graphics Mathematical Elements for Computer
+Graphics Procedural Elements of Computer
+Guide The UNIX Ultimate
+Hacking Exposed
+Handbook for Object-Oriented Programming with Java A
+Internet and the World Wide Web Fundamentals of the
+Internet for Engineers Intro to the
+Introduction to Algorithms
+Introduction to Computing Systems
+Introduction to Logic Design
+Intro to the Internet for Engineers
+Java A Handbook for Object-Oriented Programming with
+Learning Machine
+Logic Design Introduction to
+Logic Design with VHDL Design Fundamentals of Digital
+Machine Learning
+Management Systems Advanced Database
+Management Systems Advanced Database
+Mathematical Elements for Computer Graphics
+Mathematics Applications of Discrete
+Networking Data Communications and
+Object Oriented Programming Primer for Engineers An
+Object Oriented Programming Primer for Engineers An
+Object-Oriented Programming with Java A Handbook for
+Organization Computer
+Organization Computer
+Organization Computer Architecture and
+Organization Principles of Computer
+Organization Principles of Computer
+Oriented Programming Primer for Engineers An Object
+Oriented Programming Primer for Engineers An Object
+Primer for Engineers An Object Oriented Programming
+Primer for Engineers An Object Oriented Programming
+Principles of Computer Organization
+Principles of Computer Organization
+Procedural Elements of Computer Graphics
+Programming Aspect-Oriented
+Programming Primer for Engineers An Object Oriented
+Programming Primer for Engineers An Object Oriented
+Programming with Java A Handbook for Object-Oriented
+Real-Time Systems
+Real-Time Systems
+Science Computer Science Tapestry Exploring Computer
+Science Tapestry Exploring Computer Science Computer
+System Concepts Database
+Systems Advanced Database Management
+Systems Advanced Database Management
+Systems Introduction to Computing
+Systems Real-Time
+Systems Real-Time
+Tapestry Exploring Computer Science Computer Science
+Ultimate Guide The UNIX
+UNIX Ultimate Guide The
+VHDL Design Fundamentals of Digital Logic Design with
+Web Fundamentals of the Internet and the World Wide
+Wide Web Fundamentals of the Internet and the World
+World Wide Web Fundamentals of the Internet and the
+
+The number of lines in the input file sample.dat is 128
+The number of lines in the output file sample.out is 1313
+
+
+russ@russ-MS-7680 ~/Desktop/system-programming-proj3 $ git log
+commit e144f94b08d0c61133ade4e9550e4daefa713b12
+Author: russ <russ@russ-MS-7680.(none)>
+Date:   Thu Apr 18 14:49:54 2013 -0400
+
+    part 2 complete
+
+commit 880f1851275a3d09854d6db2d4b2a4cb79e45c23
+Author: russ <russ@russ-MS-7680.(none)>
+Date:   Thu Apr 18 06:16:00 2013 -0400
+
+    part one complete
+
+commit 2157844c48b93217ccb26e1892cebaf94f866e8f
+Author: russ <russ@russ-MS-7680.(none)>
+Date:   Thu Apr 18 05:53:14 2013 -0400
+
+    draft2
+
+commit 3c656a38a028c20ab476d4e1aca7c5b9d7cfdc9e
+Author: russ <russ@russ-MS-7680.(none)>
+Date:   Thu Apr 18 05:42:59 2013 -0400
+
+    u
+
+commit 30813245f07aa9785144224b4b9fb26f3a1f5cf3
+Author: russ <russ@russ-MS-7680.(none)>
+Date:   Thu Apr 18 05:42:08 2013 -0400
+
+    u
+
+commit 4a3ddc1ba649b98ee8e15201b9dd8254b6347df5
+Author: russ <russ@russ-MS-7680.(none)>
+Date:   Mon Apr 15 03:27:45 2013 -0400
+
+    Added part 2
+
+commit 8d539bf71640fa46df31374e478a0c411c5f1821
+Author: russ <russ@russ-MS-7680.(none)>
+Date:   Mon Apr 15 01:17:04 2013 -0400
+
+    draft1
+
